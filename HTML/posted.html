@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posted</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="../css/style2.css">
+  </head>
+  <body>
+      <div class="container">
+        <button id="post_header" class="col-lg-10 mx-auto" onclick="gotoMain()">SKKU Community</button>
+        <button class="float-right col-lg-1 mx-auto home_btn" id="logoutBtn" onclick="gotoLogin()">Logout</button>
+        <button class="float-right col-lg-1 mx-auto home_btn" id="logoutBtn" onclick="gotoProfile()">MyPage</button>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="btn-group mt-4 float-right" role="group" aria-label="Post Actions">
+              <button type="button" class="btn" id="postDelete">Delete</button>
+            </div>
+            <div id="postbody">
+            <h1 class="mt-4" id="postedtitle"></h1>
+            <p class="lead">
+              by
+              <a href="#" id="posteduser"></a>
+            </p>
+            <hr />
+            <p id="postedtime"></p>
+            <hr />
+            <img class="card-img-top" id="postedimg" src="" alt="Card image cap" />
+            <hr />
+            <p class="lead" id="postedcontents"></p>
+            
+            <hr />
+            <div class="card my-4">
+              <h5 class="card-header">Leave a Comment:</h5>
+              <div class="card-body">
+                <form id="commentform">
+                  <div class="form-group">
+                    <textarea class="form-control" id="commentContent" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn_submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+            <div class="comments-container">
+            
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

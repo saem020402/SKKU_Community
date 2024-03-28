@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="sidenav">
+        <div class="login-main-text">
+           <h2>New to our website?</h2>
+           <p>This web page is SKKU Community!</p>
+           <button type="submit" class="btn btn_left" onclick="gotoSignup()">Create an Account</button>
+        </div>
+     </div>
+     <div class="main" id="log_main">
+        <div class="col-md-6 col-sm-12">
+           <div class="login-form">
+              <form id="loginform">
+                 <div class="form-group">
+                    User Name
+                    <input type="text" class="form-control" placeholder="ID" name="login_id">
+                 </div>
+                 <div class="form-group">
+                    Password
+                    <input type="password" class="form-control" placeholder="Password" name="login_password">
+                 </div>
+                 <button type="submit" class="btn">Login</button>
+              </form>
+           </div>
+        </div>
+     </div>
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+     <script src="../js/script.js"></script>
+</body>
+</html>
